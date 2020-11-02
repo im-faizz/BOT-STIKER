@@ -56,7 +56,7 @@ const startServer = async () => {
         let { pushname, verifiedName } = sender
         // verifiedName is the name of someone who uses a business account
         pushname = pushname || verifiedName
-        const prefix = '#'
+        const prefix = '?'
         body = (type == 'chat' && body.startsWith(prefix)) ? body : ((type == 'image' && caption) && caption.startsWith(prefix)) ? caption : ''
         const command = body.slice(prefix.length).trim().split(/ +/).shift().toLowerCase()
         const args = body.slice(prefix.length).trim().split(/ +/).slice(1)
