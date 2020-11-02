@@ -1,8 +1,8 @@
 const { create, decryptMedia } = require('@open-wa/wa-automate')
 const moment = require('moment')
-const urlShortener = require('./lib/shortener')
-const color = require('./lib/color')
-const { fetchMeme } = require('./lib/fetcher')
+const urlShortener = require('./shortener')
+const color = require('./color')
+const { fetchMeme } = require('./fetcher')
 const serverOption = {
     headless: true,
     qrRefreshS: 20,
